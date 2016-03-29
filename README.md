@@ -32,13 +32,17 @@ c) predictable
 
 d) do not modify values passed to them
 
+*A pure function always returns the same reult given the same parameters*
+
 *Pure functions have two very nice properties. They are easy to think about, and they are easy to re-use.* - [Eloquent Javascript]
+
+*Some of the functions you write in Redux have to be pure and you need to be mindful of that.*
 
 ### Third Principle
 
-To describe state mutations you have to write a function that takes the previous state of the app, the action being dispatched and returns the next state of the app - and this function has to be pure. this function is called the `reducer`
+To describe state mutations you have to write a function that takes the previous state of the app, the action being dispatched and returns the next state of the app - and this function has to be pure. This function is called the `reducer`
 
-The UI is most predictable when it’s described as a pure function of the application state
+The UI is most predictable when it’s described as a pure function of the application state.
 
 
 ### Example App from [Redux]
